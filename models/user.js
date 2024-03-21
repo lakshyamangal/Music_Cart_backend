@@ -25,5 +25,11 @@ const userSchema = new mongoose.Schema({
       ref: "Invoice",
     },
   ],
+  feedback: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Feedback",
+    },
+  ],
 });
 module.exports = mongoose.model("User", userSchema);
